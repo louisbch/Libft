@@ -6,7 +6,7 @@
 /*   By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 15:32:13 by lbouchon          #+#    #+#             */
-/*   Updated: 2022/07/14 16:51:26 by lbouchon         ###   ########.fr       */
+/*   Updated: 2022/07/14 18:23:18 by lbouchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,8 @@ size_t	get_len(int n)
 	if (n == 0)
 		return (1);
 	len = 0;
-	while (n < 0)
-	{
+	if (n < 0)
 		len++;
-	}
 	while (n)
 	{
 		n /= 10;
@@ -37,14 +35,13 @@ char	*ft_itoa(int n)
 	char	*result;
 
 	len = get_len(n);
-	if (! result)
-		return (NULL);
-	result = (char *)malloc(sizeof(char) * (len + 1));
+	result = (char *)malloc(len + 1);
+	result[len] = '\0';
 	if (n < 0)
 	{
 		result[0] = '-';
 	}
-	while (len)
+	while (len--)
 	{
 		if (n < 0)
 		{
@@ -56,7 +53,6 @@ char	*ft_itoa(int n)
 			result[len] = '0' + n % 10;
 			n = n / 10;
 		}
-		len--;
 	}
 	return (result);
 }
@@ -69,5 +65,4 @@ int main ()
 	printf("%s\n", ft_itoa(0));
 	printf("%s\n", ft_itoa(-52488415));
 	printf("%s\n", ft_itoa(230));
-	
 }
