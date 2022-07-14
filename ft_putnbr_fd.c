@@ -6,7 +6,7 @@
 /*   By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 12:41:28 by lbouchon          #+#    #+#             */
-/*   Updated: 2022/07/12 12:46:36 by lbouchon         ###   ########.fr       */
+/*   Updated: 2022/07/14 18:37:12 by lbouchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 	else if (n > 9)
 	{
-		ft_putnbr(n / 10, fd);
-		ft_putnbr(n % 10, fd);
+		ft_putnbr_fd(n / 10, fd);
+		ft_putnbr_fd(n % 10, fd);
 	}
 	else
 		ft_putchar_fd(n + 48, fd);
