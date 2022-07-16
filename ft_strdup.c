@@ -6,7 +6,7 @@
 /*   By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 14:52:36 by lbouchon          #+#    #+#             */
-/*   Updated: 2022/07/11 18:42:38 by lbouchon         ###   ########.fr       */
+/*   Updated: 2022/07/16 17:51:23 by lbouchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strdup(const char *src)
 {
-	size_t		i;
+	size_t	i;
 	char	*dest;
 
 	dest = malloc(ft_strlen(src) * sizeof(char) + 1);

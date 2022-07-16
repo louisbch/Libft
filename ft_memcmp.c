@@ -6,7 +6,7 @@
 /*   By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 12:45:13 by lbouchon          #+#    #+#             */
-/*   Updated: 2022/07/12 15:50:36 by lbouchon         ###   ########.fr       */
+/*   Updated: 2022/07/16 17:42:56 by lbouchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,16 +20,16 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	ptr_s1 = (const unsigned char *)s1;
 	ptr_s2 = (const unsigned char *)s2;
 	if (n == 0)
-		return(0);
+		return (0);
 	while (n && *ptr_s1 && (*ptr_s1 == *ptr_s2))
 	{
-		
 		s1++;
 		s2++;
 		n--;
 	}
 	return (*ptr_s1 - *ptr_s2);
 }
+
 /*
 #include <string.h>
 int main ()

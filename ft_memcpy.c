@@ -6,7 +6,7 @@
 /*   By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 10:34:21 by lbouchon          #+#    #+#             */
-/*   Updated: 2022/07/12 15:51:02 by lbouchon         ###   ########.fr       */
+/*   Updated: 2022/07/16 17:42:54 by lbouchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	size_t			i;
+	size_t		i;
 	char		*ptr_dest;
 	const char	*ptr_src;
 

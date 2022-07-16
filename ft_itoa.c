@@ -6,7 +6,7 @@
 /*   By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 15:32:13 by lbouchon          #+#    #+#             */
-/*   Updated: 2022/07/14 18:23:18 by lbouchon         ###   ########.fr       */
+/*   Updated: 2022/07/16 17:39:57 by lbouchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ char	*ft_itoa(int n)
 		{
 			result[len] = '0' + n % 10 * (-1);
 			n = n / 10;
- 		}
+		}
 		else
 		{
 			result[len] = '0' + n % 10;
@@ -57,6 +57,7 @@ char	*ft_itoa(int n)
 	return (result);
 }
 
+/*
 #include <stdio.h>
 
 int main ()
@@ -66,3 +67,4 @@ int main ()
 	printf("%s\n", ft_itoa(-52488415));
 	printf("%s\n", ft_itoa(230));
 }
+*/

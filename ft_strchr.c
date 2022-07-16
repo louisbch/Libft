@@ -6,12 +6,11 @@
 /*   By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 14:59:28 by lbouchon          #+#    #+#             */
-/*   Updated: 2022/07/06 12:04:49 by lbouchon         ###   ########.fr       */
+/*   Updated: 2022/07/16 17:50:28 by lbouchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 
 char	*ft_strchr(const char *str, int c)
 {
@@ -31,4 +30,3 @@ int main()
 	printf("%s\n", ft_strchr(str, 'a'));
 }
 */
-

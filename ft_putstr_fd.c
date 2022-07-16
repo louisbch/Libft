@@ -6,7 +6,7 @@
 /*   By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/10 12:36:29 by lbouchon          #+#    #+#             */
-/*   Updated: 2022/07/14 18:40:12 by lbouchon         ###   ########.fr       */
+/*   Updated: 2022/07/16 19:20:05 by lbouchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_putstr_fd(char *s, int fd)
 {
 	size_t	i;
 
+	if (!s)
+		return ;
 	i = ft_strlen(s);
 	write(fd, s, i);
 }

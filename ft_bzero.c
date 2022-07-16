@@ -6,7 +6,7 @@
 /*   By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 12:52:33 by lbouchon          #+#    #+#             */
-/*   Updated: 2022/07/12 15:07:47 by lbouchon         ###   ########.fr       */
+/*   Updated: 2022/07/16 17:31:07 by lbouchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*ptr_s;
-	size_t				i;
+	size_t			i;
 
 	ptr_s = s;
 	i = 0;
@@ -25,7 +25,6 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
-
 
 /*
 #include <string.h>

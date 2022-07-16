@@ -6,7 +6,7 @@
 /*   By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 16:13:38 by lbouchon          #+#    #+#             */
-/*   Updated: 2022/07/12 15:06:52 by lbouchon         ###   ########.fr       */
+/*   Updated: 2022/07/16 19:31:40 by lbouchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,10 @@ char	*ft_strnstr(const char *str, const char *to_find, size_t n)
 
 	i = 0;
 	j = 0;
+	if (*to_find == '\0')
+		return ((char *)str);
 	size = ft_strlen(to_find);
-	if (size == 0)
-		return ((char *)str); 
-	while (str[i])
+	while (str[i] && n >= size)
 	{
 		j = 0;
 		while (str[i + j] == to_find[j] && size <= n)
@@ -31,12 +31,11 @@ char	*ft_strnstr(const char *str, const char *to_find, size_t n)
 			j++;
 			n--;
 			if (to_find[j] == '\0')
-				return((char *)str + i);
+				return ((char *)str + i);
 		}
 		i++;
 	}
 	return (0);
-	
 }
 
 /*

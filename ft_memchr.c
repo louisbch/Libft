@@ -6,7 +6,7 @@
 /*   By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 11:59:48 by lbouchon          #+#    #+#             */
-/*   Updated: 2022/07/12 15:49:28 by lbouchon         ###   ########.fr       */
+/*   Updated: 2022/07/16 17:42:59 by lbouchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	*ft_memchr(const void *str, int c, size_t n)
 	return (NULL);
 }
 
-
+/*
 #include <string.h>
 #include <stdio.h>
 int	main()
@@ -41,3 +41,4 @@ int	main()
 	printf("ret = %s\n", res);
 
 }
+*/
