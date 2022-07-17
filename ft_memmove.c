@@ -6,39 +6,40 @@
 /*   By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 11:11:45 by lbouchon          #+#    #+#             */
-/*   Updated: 2022/07/16 17:46:48 by lbouchon         ###   ########.fr       */
+/*   Updated: 2022/07/17 17:02:57 by lbouchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	size_t			i;
-	unsigned char	*ptr_dest;
-	unsigned char	*ptr_src;
+	size_t	dstlen;
+	size_t	srclen;
 
-	i = 0;
-	if (dest == src || n == 0)
-		return (dest);
-	if (dest < src)
+	dstlen = ft_strlen(dst);
+	srclen = ft_strlen(src);
+	if (!dst && !src)
+		return (NULL);
+	if (srclen < dstlen)
 	{
-		ptr_dest = (unsigned char *)dest;
-		ptr_src = (unsigned char *)src;
-		while (n--)
-			ptr_dest[i] = ptr_src[i];
-			i++;
+		while (len > 0)
+		{
+			((char *)dst)[len - 1] = ((char *)src)[len - 1];
+			len--;
+		}
 	}
 	else
 	{
-		ptr_dest = (unsigned char *)dest + (n - 1);
-		ptr_src = (unsigned char *)src + (n - 1);
-		while (n--)
-			ptr_dest[i] = ptr_src[i];
-			i--;
+		while (len > 0)
+		{
+			((char *)dst)[len - 1] = ((char *)src)[len -1];
+			len --;
+		}
 	}
-	return (dest);
+	return (dst);
 }
+
 /*
 #include <string.h>
 #include <stdio.h>

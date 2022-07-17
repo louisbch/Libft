@@ -6,7 +6,7 @@
 /*   By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 16:13:38 by lbouchon          #+#    #+#             */
-/*   Updated: 2022/07/16 19:31:40 by lbouchon         ###   ########.fr       */
+/*   Updated: 2022/07/17 17:36:25 by lbouchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strnstr(const char *str, const char *to_find, size_t n)
 	if (*to_find == '\0')
 		return ((char *)str);
 	size = ft_strlen(to_find);
-	while (str[i] && n >= size)
+	while (str[i])
 	{
 		j = 0;
 		while (str[i + j] == to_find[j] && size <= n)
