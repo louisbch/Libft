@@ -27,11 +27,10 @@ char	*ft_strrchr(const char *str, int c)
 	return (NULL);
 }
 
-/*
+#include <stdio.h>
 int main()
 {
 	char str[] = "je suis samuel";
-	printf("%s\n", ft_strrchr(str, 's'));
+	printf("%s\n", ft_strrchr(str, 'l'));
 
 }
-*/
