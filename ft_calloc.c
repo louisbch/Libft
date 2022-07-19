@@ -6,7 +6,7 @@
 /*   By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 15:36:15 by lbouchon          #+#    #+#             */
-/*   Updated: 2022/07/17 14:51:04 by lbouchon         ###   ########.fr       */
+/*   Updated: 2022/07/19 18:29:03 by lbouchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,3 +24,15 @@ void	*ft_calloc(size_t count, size_t size)
 	ft_bzero(res, count * size);
 	return (res);
 }
+
+/*
+#include <stdio.h>
+
+int main ()
+{
+	printf(" |%s| %p\n",ft_calloc(12,10),ft_calloc(12,10));
+	printf(" |%s| %p\n",ft_calloc(20,10),ft_calloc(20,10));
+	printf(" |%s| %p\n",ft_calloc(12,8),ft_calloc(12,8));
+	printf(" |%s| %p\n",ft_calloc(0,0),ft_calloc(0,0));
+}
+*/

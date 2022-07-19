@@ -6,7 +6,7 @@
 #    By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/16 18:08:18 by lbouchon          #+#    #+#              #
-#    Updated: 2022/07/19 11:47:39 by lbouchon         ###   ########.fr        #
+#    Updated: 2022/07/19 13:58:13 by lbouchon         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,6 +14,7 @@ NAME = libft.a
 RM = rm -rf
 cc = gcc
 FLAGS = -Wall -Wextra -Werror
+NORMINETTE = norminette -R CheckDefine
 
 INC = \
 			libft.h \
@@ -52,6 +53,7 @@ SRC = \
 			ft_strlcpy.c \
 			ft_strlen.c \
 			ft_strtrim.c \
+			ft_split.c \
 
 SRCS = $(SRC)
 OBJS = $(addsuffix .o, $(basename $(SRC)))
@@ -72,3 +74,6 @@ re : fclean all
 
 .c.o: $(SRCS)
 		$(CC) -c -o $@ $< $(FLAGS)
+
+norm:
+		$(NORMINETTE)
