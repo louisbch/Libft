@@ -6,13 +6,13 @@
 /*   By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 15:32:13 by lbouchon          #+#    #+#             */
-/*   Updated: 2022/07/17 17:48:25 by lbouchon         ###   ########.fr       */
+/*   Updated: 2022/07/19 13:10:05 by lbouchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
- static size_t	get_len(int n)
+static size_t	get_len(int n)
 {
 	size_t	len;
 
@@ -20,10 +20,7 @@
 		return (1);
 	len = 0;
 	if (n < 0)
-	{
-		n *= -1;
 		len++;
-	}
 	while (n)
 	{
 		n /= 10;

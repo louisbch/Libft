@@ -6,7 +6,7 @@
 /*   By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 15:26:47 by lbouchon          #+#    #+#             */
-/*   Updated: 2022/07/16 18:21:00 by lbouchon         ###   ########.fr       */
+/*   Updated: 2022/07/19 12:18:49 by lbouchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ char	*ft_strdup(const char *src);
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 char	*ft_strjoin(char const *s1, char const *s2);
 size_t	ft_strlcat(char *dest, const char *src, size_t n);
-char	*ft_strlcpy(char *dest, const char *src, size_t size);
+size_t	ft_strlcpy(char *dest, const char *src, size_t size);
 size_t	ft_strlen(const char *str);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int		ft_strncmp(const char *s1, const char *s2, size_t n);

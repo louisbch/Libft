@@ -6,7 +6,7 @@
 #    By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/16 18:08:18 by lbouchon          #+#    #+#              #
-#    Updated: 2022/07/17 15:14:06 by lbouchon         ###   ########.fr        #
+#    Updated: 2022/07/19 11:47:39 by lbouchon         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -51,6 +51,7 @@ SRC = \
 			ft_strlcat.c \
 			ft_strlcpy.c \
 			ft_strlen.c \
+			ft_strtrim.c \
 
 SRCS = $(SRC)
 OBJS = $(addsuffix .o, $(basename $(SRC)))

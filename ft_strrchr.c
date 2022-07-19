@@ -6,27 +6,35 @@
 /*   By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 15:58:24 by lbouchon          #+#    #+#             */
-/*   Updated: 2022/07/16 17:56:10 by lbouchon         ###   ########.fr       */
+/*   Updated: 2022/07/19 12:10:26 by lbouchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *str, int c)
+char	*ft_strrchr(const char *s, int c)
 {
-	while (*str)
+	size_t	i;
+	size_t	position;
+	char	*str;
+
+	i = 0;
+	position = 0;
+	str = (char *)s;
+	while (str[i])
 	{
-		str++;
+		if ((unsigned char)str[i] == (unsigned char)c)
+			position = i;
+		i++;
 	}
-	while (*str != (char)c)
-	{
-		str--;
-		if (*str == (char)c)
-			return ((char *)str);
-	}
+	if (position > 0 || (unsigned char)str[0] == (unsigned char)c)
+		return (&str[position]);
+	if (str[i] == 0 && c == 0)
+		return (&str[i]);
 	return (NULL);
 }
 
+/*
 #include <stdio.h>
 int main()
 {
@@ -34,3 +42,4 @@ int main()
 	printf("%s\n", ft_strrchr(str, 'l'));
 
 }
+*/
