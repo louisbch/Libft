@@ -6,7 +6,7 @@
 /*   By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 16:48:19 by lbouchon          #+#    #+#             */
-/*   Updated: 2022/07/16 17:48:56 by lbouchon         ###   ########.fr       */
+/*   Updated: 2022/07/20 15:18:02 by lbouchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,13 +28,15 @@ void	*ft_memset(void *s, int c, size_t n)
 }
 
 /*
+#include <stdio.h>
+#include <string.h>
 int	main(void)
 {
-	char str[] = "Salut pote !";
-	char str2[] = "Salut pote !";
+	char str[] = "";
+	char str2[] = "Salut pote!";
 
-	 memset(str, '*', 3);
-	ft_memset(str2, '*', 3);
+	 memset(str, 'a', 5);
+	ft_memset(str2, 'a', 5);
 
 
 	printf("%s\n", str);

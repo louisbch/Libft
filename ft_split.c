@@ -6,7 +6,7 @@
 /*   By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/19 13:56:52 by lbouchon          #+#    #+#             */
-/*   Updated: 2022/07/19 14:42:49 by lbouchon         ###   ########.fr       */
+/*   Updated: 2022/07/20 15:24:46 by lbouchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,6 +100,7 @@ char	**ft_split(char const *s, char c)
 	return (tab);
 }
 
+/*
 #include <stdio.h>
 
 int		main(void)
@@ -115,3 +116,4 @@ int		main(void)
 	}
 	return (0);
 }
+*/

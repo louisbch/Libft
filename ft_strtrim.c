@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strim.c                                         :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 15:00:30 by lbouchon          #+#    #+#             */
-/*   Updated: 2022/07/16 18:04:11 by lbouchon         ###   ########.fr       */
+/*   Updated: 2022/07/22 14:37:52 by lbouchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	if (!s1 || !set)
 		return (NULL);
 	i = 0;
-	j = ft_strlen(s1) -1;
+	j = ft_strlen(s1) - 1;
 	while (ft_check_int(s1[i], set) == 1)
 		i++;
 	if (i - 1 == j)
