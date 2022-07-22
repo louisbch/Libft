@@ -6,7 +6,7 @@
 /*   By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 10:34:21 by lbouchon          #+#    #+#             */
-/*   Updated: 2022/07/16 17:42:54 by lbouchon         ###   ########.fr       */
+/*   Updated: 2022/07/22 14:52:25 by lbouchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,16 +30,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-
-/*
-#include <string.h>
-int	main()
-{
-	char		str1[50] = { 0 };
-	const char	str2[] = "Bonjour, le monde !";
-	
-
-	printf("%s\n", ft_memcpy(str1, str2, 5));
-	printf("%s\n", memcpy(str1, str2, 5));
-}
-*/

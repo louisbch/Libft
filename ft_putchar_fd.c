@@ -6,7 +6,7 @@
 /*   By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/07 15:18:15 by lbouchon          #+#    #+#             */
-/*   Updated: 2022/07/10 12:31:47 by lbouchon         ###   ########.fr       */
+/*   Updated: 2022/07/22 14:48:57 by lbouchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,3 @@ void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }
-/*
-int main()
-{
-	
-}
-*/

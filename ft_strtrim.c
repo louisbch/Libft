@@ -6,7 +6,7 @@
 /*   By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 15:00:30 by lbouchon          #+#    #+#             */
-/*   Updated: 2022/07/22 14:37:52 by lbouchon         ###   ########.fr       */
+/*   Updated: 2022/07/22 14:51:16 by lbouchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,15 +48,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	str = ft_substr(s1, i, (j - i + 1));
 	return (str);
 }
-
-/*
-#include <stdio.h>
-
-int main()
-{
-	printf("%s\n", ft_strtrim("abqbc", "abc"));
-	printf("%s\n", ft_strtrim("xavocadoyz", "xyz"));
-	printf("%s\n", ft_strtrim("aqrdac", "abc"));
-	printf("%s\n", ft_strtrim("aqraadabc", "abc"));
-}
-*/

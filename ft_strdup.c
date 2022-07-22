@@ -6,7 +6,7 @@
 /*   By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 14:52:36 by lbouchon          #+#    #+#             */
-/*   Updated: 2022/07/16 17:51:23 by lbouchon         ###   ########.fr       */
+/*   Updated: 2022/07/22 14:49:39 by lbouchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,14 +29,3 @@ char	*ft_strdup(const char *src)
 	dest[i] = '\0';
 	return (dest);
 }
-/*
-#include <string.h>
-int main()
-{
-	char *str;
-	str = "Hello world";
-	printf("%s%p\n", str, str);
-	printf("%s%p\n", ft_strdup(str), ft_strdup(str));
-	printf("%s%p\n", strdup(str), strdup(str));	
-}
-*/

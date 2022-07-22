@@ -6,7 +6,7 @@
 /*   By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 16:19:40 by lbouchon          #+#    #+#             */
-/*   Updated: 2022/07/16 19:39:24 by lbouchon         ###   ########.fr       */
+/*   Updated: 2022/07/22 14:49:58 by lbouchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,13 +38,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	str[i + j] = '\0';
 	return (str);
 }
-
-/*
-int main()
-{
-	char	str1[] = "Salut ";
-	char	str2[] = "mon pote";
-	printf("%s\n", ft_strjoin(str1, str2));
-	
-}
-*/

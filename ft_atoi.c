@@ -6,7 +6,7 @@
 /*   By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 13:38:00 by lbouchon          #+#    #+#             */
-/*   Updated: 2022/07/17 13:44:32 by lbouchon         ###   ########.fr       */
+/*   Updated: 2022/07/22 14:47:16 by lbouchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,17 +40,3 @@ int	ft_atoi(const char *str)
 	}
 	return (res * sign);
 }
-
-/*
-#include <stdlib.h>
-#include <stdio.h>
-int main()
-{
-	char str[] = "1-23985abcd";
-	char str2[] = "-abcde";
-	printf("%d\n", ft_atoi(str));
-	printf("%d\n", atoi(str));
-	printf("%d\n", ft_atoi(str2));
-	printf("%d\n", atoi(str2));
-}
-*/

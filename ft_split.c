@@ -6,7 +6,7 @@
 /*   By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/19 13:56:52 by lbouchon          #+#    #+#             */
-/*   Updated: 2022/07/22 14:45:21 by lbouchon         ###   ########.fr       */
+/*   Updated: 2022/07/22 14:49:28 by lbouchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,21 +99,3 @@ char	**ft_split(char const *s, char c)
 	tab[size] = '\0';
 	return (tab);
 }
-
-/*
-#include <stdio.h>
-
-int		main(void)
-{
-	int i = 0;
-	char **tab;
-		
-	tab = ft_split("je suis parti dehors", ' ');
-	while (i < ft_get_nb_word("je suis parti dehors", ' '))
-	{
-		printf("string %d : %s\n", i, tab[i]);
-		i++;
-	}
-	return (0);
-}
-*/

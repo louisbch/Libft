@@ -6,7 +6,7 @@
 /*   By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 14:59:28 by lbouchon          #+#    #+#             */
-/*   Updated: 2022/07/16 17:50:28 by lbouchon         ###   ########.fr       */
+/*   Updated: 2022/07/22 14:49:33 by lbouchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,3 @@ char	*ft_strchr(const char *str, int c)
 	}
 	return ((char *)str);
 }
-
-/*
-int main()
-{
-	char str[] = "Je sais tout";
-	printf("%s\n", ft_strchr(str, 'a'));
-}
-*/

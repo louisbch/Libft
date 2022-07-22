@@ -6,7 +6,7 @@
 /*   By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 11:12:00 by lbouchon          #+#    #+#             */
-/*   Updated: 2022/07/20 16:48:21 by lbouchon         ###   ########.fr       */
+/*   Updated: 2022/07/22 14:50:40 by lbouchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		return (0);
 	return (*(unsigned char *)s1 - *(unsigned char *)s2);
 }
-/*
-#include <string.h>
-int main()
-{
-	char s1[] = "Youpp";
-	char s2[] = "Yoipy";
-	printf("%d\n", ft_strncmp(s1, s2, 2));
-	printf("%d\n", strncmp(s1, s2, 2));
-}
-*/

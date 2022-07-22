@@ -6,7 +6,7 @@
 /*   By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 15:58:24 by lbouchon          #+#    #+#             */
-/*   Updated: 2022/07/19 12:10:26 by lbouchon         ###   ########.fr       */
+/*   Updated: 2022/07/22 14:51:07 by lbouchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,13 +33,3 @@ char	*ft_strrchr(const char *s, int c)
 		return (&str[i]);
 	return (NULL);
 }
-
-/*
-#include <stdio.h>
-int main()
-{
-	char str[] = "je suis samuel";
-	printf("%s\n", ft_strrchr(str, 'l'));
-
-}
-*/

@@ -6,7 +6,7 @@
 /*   By: lbouchon <lbouchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/07 14:58:53 by lbouchon          #+#    #+#             */
-/*   Updated: 2022/07/16 17:54:01 by lbouchon         ###   ########.fr       */
+/*   Updated: 2022/07/22 14:49:48 by lbouchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,20 +25,3 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		i++;
 	}
 }
-
-/*
-#include <stdio.h>
-
-void  f(unsigned int index, char *s)
-{
-    ft_putchar_fd(*s, 1);
-    ft_putchar_fd('[', 1);
-    ft_putnbr_fd(index, 1);
-    ft_putchar_fd(']', 1);
-}
-int main(void)
-{
-    char    str1[] = "abcdefghijklmnopqrstuvwxyz";
-    ft_striteri(str1, *f);
-}
-*/
